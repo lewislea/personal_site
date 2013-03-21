@@ -1,0 +1,14 @@
+Developer
+	- skills
+	- baseball league & explanation
+	- dev philosophy
+	- link to contact
+
+Music
+	- sound cloud API
+	- youtube API
+	- bio
+	- around town (shows)
+	- email list sign up
+	- pics
+	- 
