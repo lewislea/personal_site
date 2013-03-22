@@ -4,18 +4,31 @@
 
 <title>Lewis Lea</title>
 
-
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script src="js/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
-<script src="js/lewis.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="js/jquery.localscroll-1.2.7.js"></script>
+<script src="js/lewis.js"></script>
 
 
 </head>
 <body>
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <!-- landing page -->
 <div class = "home">
 <div class = "fixed">
@@ -25,24 +38,24 @@
     <ul class="left nav">
       <li class="divider"></li>
       <li class="active"><a href="#">Back to Top</a></li>
-      <li class="active"><a href="#">Music</a></li>
-      <li class="active"><a href="#">Development</a></li>
+      <li class="active"><a href="#bigMusic">Music</a></li>
+      <li class="active"><a href="#bigDev">Development</a></li>
       <li class="active"><a href="#">Say Hello</a></li>
 </nav>
 </div>
 
 <!-- logo in top center -->
 <div class = "row logo">
-	<div class = "small-5 small-centered columns">
-		<h1><a id = "logo" href="#">Lewis Lea</a></h1>
+	<div class = "small-9 small-centered columns">
+		<h1 id="mainpageLewis">Lewis Lea</h1>
 	</div>
 </div>
 
 <!-- bio -->
 <div class = "row bio">
-	<div class = "small-5 small-centered columns">	
-		<span><p>I'm a <a href="#">musician.</a></p>
-			<p>I'm a <a href="#">developer</a></p>
+	<div class = "small-6 small-centered columns">	
+		<span><p>I'm a <a class="homeLink" id="mainPageMusic" href="#bigMusic" >musician</a></br>
+			and<a class="homeLink" id="mainPageDev" href="#bigDev"> web developer</a></p>
 		</span>
 	</div>
 </div>
@@ -52,77 +65,50 @@
 <div class = "music">
 
 <div class = "row">
-	<div class = "small-2 small-centered columns">
-	<h2>Music</h2>	
+	<div class = "small-4 small-centered columns">
+	<h2 id="bigMusic">Music</h2>	
 	</div>
 </div>
+
 <div class = "row">
-  <div class = "small-5 small-centered columns"> 
+  <div class = "small-5 columns"> 
   <p><span>music has always been a part of my life.  sharing it with family, friends, and (hopefully) you is an amazing privilege.
 thanks for taking a moment to check it out.  if you like it, I hope you'll tell some folks.  see you soon! </span></p>
   </div>
-</div>
-<!-- picture carousel -->
-<div class="row">
-  <div class="small-12 columns">
-    <div id="myCarousel" class="carousel slide">
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="img/best.jpg">
-                    <div class="carousel-caption">
-                      <h4>First Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/lewisphoto3.jpg">
-                    <div class="carousel-caption">
-                      <h4>Second Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/good-3.jpg">
-                    <div class="carousel-caption">
-                      <h4>Third Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-              </div>
-</div>
-</div>
+
+
+
 
 <!-- facebook/twitter -->
-<div class="row">
-<div class = "small-3 columns"><h3>follow me</h3>
+
+<div class = "small-2 columns"><h3>follow me</h3>
 <div class="fb-like" data-href="https://www.facebook.com/lewisleamusic" data-send="true" data-width="450" data-show-faces="true"></div>
+<div class="fb-like" data-href="http://www.lewislea.com" data-send="true" data-width="150" data-show-faces="true"></div>
 </div>
 <!-- youtube videos & soundcloud stream -->
-<div class="small-4 columns"><h3>Look & Listen</h3>
-
+<div class="small-5 columns"><h3>Look & Listen</h3>
+<iframe width="100%" height="350" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F21245932&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+<div class="flex-video">
+  <iframe width="560" height="300" src="http://www.youtube.com/embed/IB52raEamDQ" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
+<!-- <div class="flex-video">
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe>
+</div> -->
+</div>
 
+</div>
 
 </div>
 
 
 
-</div>
 
 <!-- dev section -->
 <div class = "develop">
 <div class = "row" id="develop">
-	<div class = "small-5 small-centered columns">
-	<h2>Web Development</h2>	
+	<div class = "small-10 small-centered columns">
+	<h2 id="bigDev">Web Development</h2>	
 	</div>
 </div>
 
@@ -144,10 +130,8 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
 </div>
 <div class="small-4 columns">
 <h3>Projects</h3>
-<span>stuff i'm working on </span>
- <div class="flex-video">
-<iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe> 
-  </div>
+<a href="#myModal" role="button" class="button" data-toggle="modal">Check out a Recent Project</a>
+
 </div>
 
 </div>
@@ -164,27 +148,24 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
 	</div>
 </div>
 <div class="row">
-  <div class="small-6 columns">
-    <span>I would love to work with you.  Give me a shout and we can begin the process.  Thanks!</span>
+  <div class="small-5 small-centered columns">
+    <p>       I would love to work with you.  </br>Give me a shout and we can begin the process.  Thanks!</p>
+    <a href="mailto:wlewislea@gmail.com">Send Me An Email</a>
   </div>
-   <div class="small-6 columns">
-    <p> contact Modal?</p>
-    <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-  </div>
+ 
 </div>
 
-<!--music video modal -->
+<!--project modal -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">from a house show in August 2012</h3>
+    <h3 id="myModalLabel">Recent Project</h3>
   </div>
   <div class="modal-body">
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe>
+  <img src="img/beerleague-screenshot.png">
+  <p>This page was created for a baseball league. It can process information to add teams, generate a schedule, and log game scores while updating league standings.  AJAX with Javascript, jQuery, bootstrap, JSON and database interaction were all used.
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
   </div>
 </div>
 

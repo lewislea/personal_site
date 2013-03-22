@@ -1,41 +1,62 @@
+body, h1, h2, h3 {
+	font-family: 'Roboto';
+}
+
+
 /*nav*/
 nav {
 	z-index: 1;
 	opacity: 0.8;
 	display: none;
 	padding-left: 25%;
+	font-family: 'Roboto';
+}
+a:hover {
+	color:gray;
 }
 
+/*	url(home-page-1.jpg)50% repeat-y,
+	url(home-page-2.jpg)50% repeat;*/
 
-/*.breadcrumbs {
-	position: fixed;
-	z-index: 1;
-	opacity: 0.8;
-	display: none;
-}*/
-/*.nav {
-	margin-left: 25%;
 
-}*/
+.homeLink{
+	font-size: 2em;
+	  color: white;
+ 	 text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
 
-/*front page name/logo*/
-#logo {
-	color:black;
+.home{
+	background: 
+	url(home-bg.jpg) 100%;
+	background-size: 100%;
+	height:59em;
+	
+}
+.logo {
+	padding-top: 5em;
+}
+.bio {
+	font-size: 2em;
+}
+
+#mainpageLewis{
+	font-size: 10em;
 }
 .music {
 	width: 100%;
-	background-color: #D8D0CD;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	height: 40em;
+	background-color: white;
+	height: 59em;
+	margin-top: 1em;
+	padding-top: 0em;
 }
 
-.bio{
-	margin-bottom: 25em;
-}
 
-.logo{
-	margin-top: 10em;
+#bigMusic {
+	font-size:6em;
 }
 
 
@@ -48,12 +69,24 @@ nav {
 
 /*entire develop container*/
 .develop {
-	background-color: #465164;
+	background-color: black;
+	color:white;
 	height: 40em;
+	width: 100%;
+	height: 35em;
+}
+.develop h2 {
+	color: white;
+}
+.develop h3 {
+	color:white;
+}
+#bigDev {
+	font-size: 6em;
 }
 
 /*entire music page container*/
 
 .contact{
-	background-color: ;
+	height:20em;
 }
