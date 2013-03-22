@@ -1,8 +1,14 @@
 $(document).ready(function(){
 
-$(document).on('scroll', function(){
-	$("nav").show(100);
-});//end on scroll
+/////// show/hide nav on scroll////////
+$(".music").hover(function(){
+	$("nav").fadeIn("slow");
+	});//end mouseenter
+$(".home").hover(function(){
+	$("nav").fadeOut("slow");
+});//end mouseenter
+
+
 
 
 
@@ -15,17 +21,3 @@ $(document).on('scroll', function(){
 
 
 
-/////// short bio on hover/////////
-$("#firstpagedeveloper").mouseenter(function(){
-	$(".devbio").fadeIn("slow");
-});//end mouseenter
-$("#firstpagedeveloper").mouseleave(function(){
-	$(".devbio").fadeOut("slow");
-});//end mouseleave
-
-$("#firstpagemusician").mouseenter(function(){
-	$(".musicbio").fadeIn("slow");
-});//end mouseenter
-$("#firstpagemusician").mouseleave(function(){
-	$(".musicbio").fadeOut("slow");
-});//end mouseleave

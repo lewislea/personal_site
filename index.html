@@ -7,24 +7,17 @@
 
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script src="js/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/lewis.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
 </head>
 <body>
-<!-- facebook api -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
+<!-- landing page -->
+<div class = "home">
 <div class = "fixed">
 <nav class="top-bar">
 <section class="top-bar-section">
@@ -32,11 +25,6 @@
     <ul class="left nav">
       <li class="divider"></li>
       <li class="active"><a href="#">Back to Top</a></li>
-      <li class="active"></li>
-      <li class="active"></li>
-      <li class="active"></li>
-      <li class="active"></li>
-      <li class="divider"></li>
       <li class="active"><a href="#">Music</a></li>
       <li class="active"><a href="#">Development</a></li>
       <li class="active"><a href="#">Say Hello</a></li>
@@ -53,37 +41,75 @@
 <!-- bio -->
 <div class = "row bio">
 	<div class = "small-5 small-centered columns">	
-		<span>A <a href="#">musician</a>
-			and <a href="#">developer</a>	
-			living in Nashville, TN who is dedicated to simplicity, beauty, and functionality.  
-			Thanks for saying hello.</span>
+		<span><p>I'm a <a href="#">musician.</a></p>
+			<p>I'm a <a href="#">developer</a></p>
+		</span>
 	</div>
 </div>
-
+</div>
 
 <!-- music section -->
 <div class = "music">
+
 <div class = "row">
-	<div class = "small-3 small-centered columns">
+	<div class = "small-2 small-centered columns">
 	<h2>Music</h2>	
 	</div>
 </div>
-
-<div class="row">
-<div class="small-3 columns">
-<span>music has always been a part of my life.  sharing it with family, friends, and (hopefully) you is an amazing privilege.
-thanks for taking a moment to check it out.  if you like it, I hope you'll tell some folks.  see you soon! </span>
+<div class = "row">
+  <div class = "small-5 small-centered columns"> 
+  <p><span>music has always been a part of my life.  sharing it with family, friends, and (hopefully) you is an amazing privilege.
+thanks for taking a moment to check it out.  if you like it, I hope you'll tell some folks.  see you soon! </span></p>
+  </div>
 </div>
+<!-- picture carousel -->
+<div class="row">
+  <div class="small-12 columns">
+    <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/best.jpg">
+                    <div class="carousel-caption">
+                      <h4>First Thumbnail label</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/lewisphoto3.jpg">
+                    <div class="carousel-caption">
+                      <h4>Second Thumbnail label</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/good-3.jpg">
+                    <div class="carousel-caption">
+                      <h4>Third Thumbnail label</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+              </div>
+</div>
+</div>
+
 <!-- facebook/twitter -->
+<div class="row">
 <div class = "small-3 columns"><h3>follow me</h3>
 <div class="fb-like" data-href="https://www.facebook.com/lewisleamusic" data-send="true" data-width="450" data-show-faces="true"></div>
 </div>
 <!-- youtube videos & soundcloud stream -->
 <div class="small-4 columns"><h3>Look & Listen</h3>
-<button data-reveal-id="videoModal">Click Me For A Modal</button>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F54733895"></iframe>
-</div>
 
+</div>
+</div>
 
 
 </div>
@@ -119,6 +145,9 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
 <div class="small-4 columns">
 <h3>Projects</h3>
 <span>stuff i'm working on </span>
+ <div class="flex-video">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe> 
+  </div>
 </div>
 
 </div>
@@ -139,28 +168,28 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
     <span>I would love to work with you.  Give me a shout and we can begin the process.  Thanks!</span>
   </div>
    <div class="small-6 columns">
-    <span>email me at <a href="mailto:wlewislea@gmail.com">wlewislea@gmail.com</a></span>
+    <p> contact Modal?</p>
+    <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
   </div>
 </div>
 
 <!--music video modal -->
-<div id="videoModal" class="reveal-modal large open">
-  <h3>from a house show on 8/2012</h3>
-  <div class="flex-video">
-  <object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/iQkubYF7lDs?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/iQkubYF7lDs?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>  
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">from a house show in August 2012</h3>
   </div>
-
-  <a class="close-reveal-modal">&#215;</a>
+  <div class="modal-body">
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
 </div>
 
-</body>
 
-<script src="//connect.soundcloud.com/sdk.js"></script>
-<script>
-  SC.initialize({
-    client_id: "lewislea"
-  });
-</script>
+</body>
 
 
 </html>
