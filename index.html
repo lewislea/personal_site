@@ -7,7 +7,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <script src="js/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -17,30 +17,24 @@
 
 
 </head>
+
 <body>
-<!-- facebook -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 
 <!-- landing page -->
-<div class = "home">
+<div id="home" class = "home">
 <div class = "fixed">
 <nav class="top-bar">
 <section class="top-bar-section">
     <!-- Left Nav Section -->
     <ul class="left nav">
       <li class="divider"></li>
-      <li class="active"><a href="#">Back to Top</a></li>
-      <li class="active"><a href="#bigMusic">Music</a></li>
-      <li class="active"><a href="#bigDev">Development</a></li>
-      <li class="active"><a href="#">Say Hello</a></li>
+      <li class="active"><a href="#home">Back to Top</a></li>
+      <li class="active"><a href="#music">Music</a></li>
+      <li class="active"><a href="#develop">Development</a></li>
+      <li class="active"><a href="#contact">Say Hello</a></li>
+    </ul>
+</section>
 </nav>
 </div>
 
@@ -54,54 +48,62 @@
 <!-- bio -->
 <div class = "row bio">
 	<div class = "small-6 small-centered columns">	
-		<span><p>I'm a <a class="homeLink" id="mainPageMusic" href="#bigMusic" >musician</a></br>
-			and<a class="homeLink" id="mainPageDev" href="#bigDev"> web developer</a></p>
+		<span><p>I'm a <a class="homeLink" id="mainPageMusic" href="#music" >musician</a><br>
+			and<a class="homeLink" id="mainPageDev" href="#develop"> web developer</a></p>
 		</span>
 	</div>
 </div>
-</div>
+</div> <!-- home div -->
+
 
 <!-- music section -->
-<div class = "music">
+<div id = "music" class = "music">
 
 <div class = "row">
 	<div class = "small-4 small-centered columns">
-	<h2 id="bigMusic">Music</h2>	
+	<h2 id="bigMusic">Music</h2>
 	</div>
-</div>
+</div> <!-- row div -->
+
 
 <div class = "row">
-  <div class = "small-5 columns"> 
-  <p><span>music has always been a part of my life.  sharing it with family, friends, and (hopefully) you is an amazing privilege.
-thanks for taking a moment to check it out.  if you like it, I hope you'll tell some folks.  see you soon! </span></p>
-  </div>
-
-
-
-
-<!-- facebook/twitter -->
-
-<div class = "small-2 columns"><h3>follow me</h3>
-<div class="fb-like" data-href="https://www.facebook.com/lewisleamusic" data-send="true" data-width="450" data-show-faces="true"></div>
-<div class="fb-like" data-href="http://www.lewislea.com" data-send="true" data-width="150" data-show-faces="true"></div>
-</div>
 <!-- youtube videos & soundcloud stream -->
-<div class="small-5 columns"><h3>Look & Listen</h3>
-<iframe width="100%" height="350" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F21245932&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+<div class="small-4 columns"><h3>hear Lewis</h3>
+  <iframe width="100%" height="350" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F21245932&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+</div>
+<div class = "small-5 columns">
+  <h3>watch Lewis</h3>
 <div class="flex-video">
-  <iframe width="560" height="300" src="http://www.youtube.com/embed/IB52raEamDQ" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<!-- <div class="flex-video">
-  <iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe>
-</div> -->
+    <iframe width="560" height="300" src="http://www.youtube.com/embed/IB52raEamDQ" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
 
+</div> <!-- row div -->
+
+<div class = "row">
+
+<div class = "small-4 columns">
+  <h3>follow Lewis</h3>
+</div>
+</div> <!-- row div -->
+
+<div class = "row">
+<!-- facebook/twitter -->
+<div class = "small-3 columns">
+  
+  <a href="http://www.twitter.com/lewislea">
+    <img src="img/twitter-bird-dark-bgs.png" alt="twitter logo">
+  </a>
+
+ <img src="img/fb-logo.png">
 </div>
 
+<div class="small-9">
+ <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flewisleamusic&amp;width=292&amp;height=300&amp;show_faces=false&amp;colorscheme=dark&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:300px;" allowTransparency="true"></iframe>
 </div>
+</div> <!-- row div -->
 
-
+</div> <!-- music div -->
 
 
 <!-- dev section -->
@@ -114,13 +116,13 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
 
 <div class="row">
 <div class="small-4 columns">
-<h3>My Philosophy</h3>
+<h3>My Approach</h3>
 <span>your idea or business is a reflection of who you are and what you value.  your website should reflect that.
   I'll help you communicate your message and brand in a simple, clear, and beautiful way.  
   contact me to get the conversation started. </span>
 </div>
 <div class="small-4 columns">
-<h3>Skills</h3>
+<h3>My Skills</h3>
 <span><p>Javascript</p>
       <p>jQuery</p>
       <p>HTML5</p>
@@ -129,34 +131,34 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
       </span>
 </div>
 <div class="small-4 columns">
-<h3>Projects</h3>
-<a href="#myModal" role="button" class="button" data-toggle="modal">Check out a Recent Project</a>
+<h3>My Projects</h3>
+<a href="#beerLeagueModal" role="button" class="button" data-toggle="modal">Beer Baseball League</a>
 
 </div>
 
-</div>
+</div> <!-- row div -->
 
 
 
-</div>
+</div>  <!-- develop div -->
 
 <!-- contact -->
 <div class = "contact">
-<div class = "row">
+<div class = "row" id="contact">
 	<div class = "small-3 small-centered columns">
 	<h2>Say Hello</h2>	
 	</div>
 </div>
 <div class="row">
   <div class="small-5 small-centered columns">
-    <p>       I would love to work with you.  </br>Give me a shout and we can begin the process.  Thanks!</p>
+    <p>       I would love to work with you.  <br>Give me a shout and we can begin the process.  Thanks!</p>
     <a href="mailto:wlewislea@gmail.com">Send Me An Email</a>
   </div>
  
 </div>
 
 <!--project modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="beerLeagueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <h3 id="myModalLabel">Recent Project</h3>
   </div>
@@ -169,8 +171,12 @@ thanks for taking a moment to check it out.  if you like it, I hope you'll tell 
   </div>
 </div>
 
+</div>
 
 </body>
 
 
 </html>
+
+
+

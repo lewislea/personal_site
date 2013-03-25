@@ -1,31 +1,21 @@
 $(document).ready(function(){
-
+ 
+ console.log($(".music").offset());
+// watch for ordering of functions
   // Scroll the whole document
-        $.localScroll();
+   $.localScroll();
 	
+// scroll listener to gauge where on page you are. hide/show nav based on result
+$(window).scroll(function() {
 
-/////// show/hide nav on scroll////////
-$(".music").mouseenter(function(){
-	$("nav").fadeIn('slow');
-});
+if($(window).height()-($('.home').offset().top-$(window).scrollTop())>960){
+$("nav").fadeIn();
+}
+ else {
+$("nav").fadeOut();
 
-
-$(".home").mouseenter(function(){
-	$("nav").fadeOut('slow');
-});
-
-// //try scroll listener
-// $(window).scroll(function() {
-// 	$(this).scrollTop(); 
-// 	 if  ( (this).scrollTop() < ($('.home').height() * -1) ) {
-// 	 	alert("boom");
-// 	 	$("nav").fadeIn('slow');
-// 	 }
-// 	 else {
-// 	 	$("nav").hide();
-// 	 }
-
-// });//end of scroll
+}
+});//end of scroll 
 
 
 
