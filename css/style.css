@@ -88,9 +88,21 @@ a:hover {
 #bigDev {
 	font-size: 6em;
 }
+#sayhello {
+	font-size: 6em;
+}
+#myapproach {
+	padding-left: 1em;
+}
+#skills {
+	line-height: 
+}
 
 /*entire music page container*/
-
+#contact {
+	padding-top: 5em;
+}
 .contact{
 	height:40em;
+	background-color: rgb(240,240,240);
 }

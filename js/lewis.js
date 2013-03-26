@@ -1,6 +1,5 @@
 $(document).ready(function(){
  
- console.log($(".music").offset());
 // watch for ordering of functions
   // Scroll the whole document
    $.localScroll();
