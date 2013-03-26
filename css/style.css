@@ -19,6 +19,10 @@ a:hover {
 /*	url(home-page-1.jpg)50% repeat-y,
 	url(home-page-2.jpg)50% repeat;*/
 
+.button {
+	background-color: gray;
+	border: none;
+}
 
 .homeLink{
 	font-size: 2em;
@@ -95,7 +99,7 @@ a:hover {
 	padding-left: 1em;
 }
 #skills {
-	line-height: 
+	line-height: .5em
 }
 
 /*entire music page container*/
@@ -106,3 +110,4 @@ a:hover {
 	height:40em;
 	background-color: rgb(240,240,240);
 }
+

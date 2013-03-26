@@ -73,11 +73,11 @@
 </div>
 <div class = "small-6 columns">
   <h3>Look</h3>
-<div class="flex-video">
-    <iframe width="560" height="300" src="http://www.youtube.com/embed/IB52raEamDQ" frameborder="0" allowfullscreen></iframe>
+  <p>Hallelujah</p>
+<a href="#hallelujahModal" role="button"  data-toggle="modal"><img src="img/hallelujah-thumb.png"></a>
   </div>
-</div>
-
+   <p>The Trouble, The Light</p>
+<a href="#troubleModal" role="button"  data-toggle="modal"><img src="img/trouble-thumb.png"></a>
 </div> <!-- row div -->
 
 
@@ -118,11 +118,11 @@
 </div>
 <div class="small-4 columns">
 <h3>My Skills</h3>
-<span id="skills"><p>Javascript</p>
-      <p>jQuery</p>
-      <p>HTML5</p>
-      <p>CSS</p>
-      <p>Wordpress</p>
+<span id="skills"><p>- Javascript</p>
+      <p>- jQuery</p>
+      <p>- HTML5</p>
+      <p>- CSS</p>
+      <p>- Wordpress</p>
       </span>
 </div>
 <div class="small-4 columns">
@@ -130,7 +130,7 @@
 <a href="http://www.github.com/lewislea" class="button">GitHub</a>
 <h3>My Recent Projects</h3>
 <a href="#beerLeagueModal" role="button" class="button" data-toggle="modal">Beer Baseball League</a>
-
+<a href="#CSSModal" role="button" class="button" data-toggle="modal">CSS Challenge</a>
 </div>
 
 </div> <!-- row div -->
@@ -157,7 +157,7 @@
 <!--project modal -->
 <div id="beerLeagueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
-    <h3 id="myModalLabel">Recent Project</h3>
+    <h3 id="myModalLabel">Baseball Beer League</h3>
   </div>
   <div class="modal-body">
   <img src="img/beerleague-screenshot.png">
@@ -167,7 +167,46 @@
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
   </div>
 </div>
-
+<!--CSS modal-->
+<div id="CSSModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <h3 id="myModalLabel">CSS Challenge</h3>
+  </div>
+  <div class="modal-body">
+  <img src="img/CSS.png">
+  <img src="img/CSS2.png">
+  <p>This page was a class project for Nashville Software School.  The entire layout was created using only HTML and CSS. </p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--hallelujah video modal-->
+<div id="hallelujahModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <h3 id="myModalLabel">Hallelujah</h3>
+  </div>
+  <div class="modal-body">
+    <div class="flex video">
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/iQkubYF7lDs" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--trouble, light video modal-->
+<div id="troubleModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <h3 id="myModalLabel">The Trouble, The Light</h3>
+  </div>
+  <div class="modal-body">
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/IB52raEamDQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
 </div>
 
 </body>
