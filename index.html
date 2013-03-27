@@ -2,13 +2,14 @@
 <html>
 <head>
   
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+
 <title>Lewis Lea</title>
 <meta name="description" content="The online home of Lewis Lea, a musician and web developer based out of Nashville, TN">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="index, follow">
 
-
+<link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -34,8 +35,11 @@
     <ul class="left nav">
       <li class="divider"></li>
       <li class="active"><a href="#home">Back to Top</a></li>
+      <li class="divider"></li>
       <li class="active"><a href="#music">Music</a></li>
+      <li class="divider"></li>
       <li class="active"><a href="#develop">Development</a></li>
+      <li class="divider"></li>
       <li class="active"><a href="#contact">Say Hello</a></li>
     </ul>
 </section>
@@ -45,18 +49,27 @@
 <!-- logo in top center -->
 <div class = "row logo">
 	<div class = "small-9 small-centered columns">
-		<h1 id="mainpageLewis">Lewis Lea</h1>
+		<h1 id="mainpageLewis"><span id="L">L</span>ewis <span id="L">L</span>ea</h1>
 	</div>
 </div>
 
 <!-- bio -->
 <div class = "row bio">
-	<div class = "small-6 small-centered columns">	
-		<span><p>I'm a <a class="homeLink" id="mainPageMusic" href="#music" >musician</a><br>
+	<div class = "small-9 small-centered columns center">	
+		<span><p>I'm a <a class="homeLink" id="mainPageMusic" href="#music" >musician</a>
 			and<a class="homeLink" id="mainPageDev" href="#develop"> web developer</a></p>
 		</span>
 	</div>
-</div>
+</div> <!-- row div -->
+
+<div class = "row">
+  <div class = "small-2 small-centered columns arrow">  
+    <a href="#music" ><img src="img/arrow_down.png"></a>
+      
+    </span>
+  </div>
+</div> <!-- row div -->
+
 </div> <!-- home div -->
 
 
@@ -72,19 +85,19 @@
 
 <div class = "row">
 <!-- youtube videos & soundcloud stream -->
-<div class="small-5 columns"><h3>Listen</h3>
+<div class="small-5 columns"><h3>listen</h3>
   <iframe width="100%" height="350" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F21245932&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
 </div>
 <div class = "small-3 small-offset-1 columns">
-  <h3>Look</h3>
-  <p>Hallelujah</p>
+  <h3>look</h3>
+  <p>hallelujah</p>
 <a href="#hallelujahModal" role="button"  data-toggle="modal"><img src="img/hallelujah-thumb.png"></a>
-   <p>The Trouble, The Light</p>
+   <p>the trouble, the light</p>
 <a href="#troubleModal" role="button"  data-toggle="modal"><img src="img/trouble-thumb.png"></a>
   </div>
   <!-- facebook/twitter -->
 <div class = "small-3 columns">
-   <h3>foLLow</h3>
+   <h3>follow</h3>
   <a href="http://www.twitter.com/lewislea">
     <img src="img/twitter-bird-dark-bgs.png" alt="twitter logo">
   </a>
@@ -99,12 +112,12 @@
 
 
 <div class="small-6 columns">
-  <h3>Live</h3>
- <a href="http://www.songkick.com/artists/5641184" class="songkick-widget" data-theme="dark">Tour dates</a>
+  <h3>live</h3>
+<a href="http://www.songkick.com/artists/5641184" class="songkick-widget" data-theme="dark">tour dates</a>
 <script src="http://widget.songkick.com/widget.js"></script>
 </div>
 <div class="small-6 columns">
-  <h3>emaiL</h3>
+  <h3>email</h3>
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -130,21 +143,21 @@
 <!-- dev section -->
 <div class = "develop">
 <div class = "row" id="develop">
-	<div class = "small-9 small-centered columns">
+	<div class = "small-8 small-centered columns center">
 	<h2 id="bigDev">Development</h2>	
 	</div>
 </div>
 
 <div class="row">
 <div class="small-4 columns">
-<h3 id = "myapproach">Approach</h3>
+<h3>Approach</h3>
 <p>Your idea or business is a reflection of who you are and what you value.        Your website should reflect that.
         I'll help you communicate your message and brand in a simple, clear, and beautiful way.  
   Contact me to get the conversation started. </p>
 </div>
-<div class="small-4 columns">
+<div class="small-3 columns" id="skills">
 <h3>Skills</h3>
-<span id="skills"><p>- Javascript</p>
+<span><p>- Javascript</p>
       <p>- jQuery</p>
       <p>- HTML5</p>
       <p>- CSS</p>
@@ -168,7 +181,7 @@
 <!-- contact -->
 <div class = "contact">
 <div class = "row" id="contact">
-	<div class = "small-7 small-centered columns">
+	<div class = "small-7 small-centered columns center">
 	<h2 id="sayhello">Say Hello</h2>	
 	</div>
 </div>

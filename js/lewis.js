@@ -16,6 +16,14 @@ $("nav").fadeOut();
 }
 });//end of scroll 
 
+//songkick API
+// $.ajax({
+// 	type: GET,
+//   	url: "api.songkick.com/api/3.0/search/artists.json?query=lewislea&apikey=1SmCFC4uAIf8KRiJ",
+// 	succes: function(data) {
+//  	console.log(data);
+// 	}
+// 	});
 
 
 
