@@ -1,6 +1,6 @@
 $(document).ready(function(){
  
-// watch for ordering of functions
+
   // Scroll the whole document
    $.localScroll();
 	

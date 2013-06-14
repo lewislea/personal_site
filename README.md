@@ -2,17 +2,21 @@ personal_site
 =============
 
 About:
-This is a site highlighting my work as a musician and web developer. 
-It is a one page site that has dynamically defined sections using static backgrounds and font size/layout.
+This is a site highlighting my work as a musician and web developer.  This the first site that I have built from scratch using all the skills that I have gained over the past three months in attending Nashville Software School. 
+It is a one page site that has defined sections using static backgrounds and layout.
 
 Build Methods:
 Framework and Layout:  Foundation 4,
 Google Fonts: Roboto,
 Project Modal:  Bootstrap,
 YouTube & Sound Cloud APIs,
-CSS3, 
+CSS3, mailchimp email sign up
 jQuery,
 Javascript
+
+
+
+
 
 Punch List:
 The entire site needs a lot of refining of line spacing, font size, margins, and element placement. 
